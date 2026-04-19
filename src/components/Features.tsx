@@ -1,4 +1,6 @@
-function Features() {
+import { Icon } from './icons';
+
+export function Features() {
   return (
     <section className="section" id="features" style={{ background: '#fafcf5' }}>
       <div className="container">
@@ -69,7 +71,7 @@ function Features() {
   );
 }
 
-function Compare() {
+export function Compare() {
   return (
     <section className="section section--tight">
       <div className="container">
@@ -112,6 +114,3 @@ function Compare() {
     </section>
   );
 }
-
-window.Features = Features;
-window.Compare = Compare;

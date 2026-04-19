@@ -1,4 +1,7 @@
-function Pricing() {
+import { useState } from 'react';
+import { Icon } from './icons';
+
+export function Pricing() {
   return (
     <section className="section" id="pricing">
       <div className="container">
@@ -80,8 +83,8 @@ function Pricing() {
   );
 }
 
-function FAQ() {
-  const [open, setOpen] = React.useState(0);
+export function FAQ() {
+  const [open, setOpen] = useState(0);
   const items = [
     { q: "is this cheating?", a: "we're a drafting tool. you review, edit, own. same as a research assistant or tutor. we don't submit for you — you do, and what you submit is your responsibility. most students use us to skip the structuring drudgework so they can spend time on the thinking that actually matters." },
     { q: "will my university detect it?", a: "everything reformant writes passes current ai-detection tools — we test against turnitin, gptzero, and the rest weekly. but you should still review and edit the draft like you would any first pass. your paper is better when it's yours." },
@@ -115,7 +118,7 @@ function FAQ() {
   );
 }
 
-function FinalCTA() {
+export function FinalCTA() {
   return (
     <section className="section section--tight" id="start">
       <div className="container">
@@ -142,13 +145,13 @@ function FinalCTA() {
   );
 }
 
-function Footer() {
+export function Footer() {
   return (
     <footer className="footer">
       <div className="container">
         <div className="footer__grid">
           <div className="footer__brand">
-            <img src="assets/logo.svg" alt="reformant" width="126" height="28" style={{ height: 28, width: 'auto' }} />
+            <img src="/assets/logo.svg" alt="reformant" width="126" height="28" style={{ height: 28, width: 'auto' }} />
             <p className="footer__brand-tag">university autopilot. drop anything in. get a polished paper out. built for students who'd rather be doing anything else.</p>
             <div className="footer__social">
               <a href="#" aria-label="Twitter / X"><Icon.Twitter/></a>
@@ -197,8 +200,3 @@ function Footer() {
     </footer>
   );
 }
-
-window.Pricing = Pricing;
-window.FAQ = FAQ;
-window.FinalCTA = FinalCTA;
-window.Footer = Footer;

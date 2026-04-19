@@ -1,4 +1,6 @@
-function Hero() {
+import { Icon } from './icons';
+
+export function Hero() {
   return (
     <section className="hero" id="top">
       <div className="hero__blobs" aria-hidden="true">
@@ -30,7 +32,6 @@ function Hero() {
             </div>
           </div>
 
-          {/* Document illustration */}
           <div className="hero__doc-wrap" aria-hidden="true">
             <div className="doc-stack">
               <div className="doc doc--back-2" />
@@ -75,5 +76,3 @@ function Hero() {
     </section>
   );
 }
-
-window.Hero = Hero;

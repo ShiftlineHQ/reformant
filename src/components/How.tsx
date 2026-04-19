@@ -1,7 +1,7 @@
-function Marquee() {
-  const unis = [
-    'oxford', 'stanford', 'imperial', 'mit', 'nyu', 'ucla', 'utoronto', 'ethz', 'tu delft'
-  ];
+import { Icon } from './icons';
+
+export function Marquee() {
+  const unis = ['oxford', 'stanford', 'imperial', 'mit', 'nyu', 'ucla', 'utoronto', 'ethz', 'tu delft'];
   return (
     <section className="marquee" aria-label="Used by students at">
       <div className="container">
@@ -14,7 +14,7 @@ function Marquee() {
   );
 }
 
-function HowItWorks() {
+export function HowItWorks() {
   return (
     <section className="section" id="how">
       <div className="container">
@@ -73,7 +73,6 @@ function HowItWorks() {
             </article>
           </div>
 
-          {/* Callout */}
           <aside className="callout" role="figure" aria-label="20 pages done for you">
             <div className="callout__number" aria-hidden="true">20</div>
             <div>
@@ -89,6 +88,3 @@ function HowItWorks() {
     </section>
   );
 }
-
-window.Marquee = Marquee;
-window.HowItWorks = HowItWorks;

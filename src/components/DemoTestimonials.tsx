@@ -1,5 +1,8 @@
-function Demo() {
-  const [step, setStep] = React.useState(0);
+import { useEffect, useState } from 'react';
+import { Icon } from './icons';
+
+export function Demo() {
+  const [step, setStep] = useState(0);
   const steps = [
     { label: 'parsing input', pct: 100 },
     { label: 'drafting structure', pct: 100 },
@@ -7,7 +10,7 @@ function Demo() {
     { label: 'generating figures', pct: 34 },
   ];
 
-  React.useEffect(() => {
+  useEffect(() => {
     const t = setInterval(() => setStep(s => (s + 1) % 4), 1600);
     return () => clearInterval(t);
   }, []);
@@ -76,7 +79,7 @@ function Demo() {
   );
 }
 
-function Testimonials() {
+export function Testimonials() {
   const items = [
     { quote: "handed in a 15-page thesis at 3pm that i started at 11am. my supervisor said it was my best work yet. i am not okay.", name: "amelia t.", role: "msc economics, lse", avatar: 'var(--lime)' },
     { quote: "i fed it my github repo and got a 20-page technical report with actual architecture diagrams. still don't fully believe it.", name: "marco r.", role: "cs, tu delft", avatar: 'var(--yellow)' },
@@ -119,6 +122,3 @@ function Testimonials() {
     </section>
   );
 }
-
-window.Demo = Demo;
-window.Testimonials = Testimonials;
