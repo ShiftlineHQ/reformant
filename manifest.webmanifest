@@ -1,0 +1,12 @@
+{
+  "name": "reformant",
+  "short_name": "reformant",
+  "description": "University autopilot — AI that drafts your reports end-to-end.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#FFFFFF",
+  "theme_color": "#ADF23F",
+  "icons": [
+    { "src": "assets/logo.svg", "sizes": "any", "type": "image/svg+xml" }
+  ]
+}
