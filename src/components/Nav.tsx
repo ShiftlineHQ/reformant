@@ -21,7 +21,7 @@ export function Nav() {
           <a href="#top" aria-label="reformant — home">
             <img
               className="nav__logo"
-              src="/assets/logo.svg"
+              src={`${import.meta.env.BASE_URL}assets/logo.svg`}
               alt="reformant"
               width="126"
               height="28"

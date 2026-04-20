@@ -304,7 +304,7 @@ export function Footer() {
             <div className="footer__badge" aria-label="Made by Shiftline">
               <img
                 className="footer__badge-mark"
-                src="/assets/favicon.svg"
+                src={`${import.meta.env.BASE_URL}assets/favicon.svg`}
                 alt="reformant"
                 height="28"
                 width="28"
@@ -314,7 +314,7 @@ export function Footer() {
               </span>
               <img
                 className="footer__badge-logo"
-                src="/assets/shiftline.svg"
+                src={`${import.meta.env.BASE_URL}assets/shiftline.svg`}
                 alt="Shiftline"
                 height="18"
               />

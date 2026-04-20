@@ -1,4 +1,4 @@
-import { Icon, Eyebrow } from "./icons";
+import { Icon } from "./icons";
 
 export function Hero() {
   return (
