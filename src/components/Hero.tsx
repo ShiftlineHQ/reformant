@@ -1,4 +1,4 @@
-import { Icon } from './icons';
+import { Icon, Eyebrow } from './icons';
 
 export function Hero() {
   return (
@@ -12,7 +12,7 @@ export function Hero() {
       <div className="container">
         <div className="hero__grid">
           <div>
-            <span className="eyebrow">university autopilot</span>
+            <Eyebrow>university autopilot</Eyebrow>
             <h1 className="display display--hero hero__headline">
               write <em className="italic-accent">brilliant</em> reports while you sleep.
             </h1>

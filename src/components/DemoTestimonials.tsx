@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react';
-import { Icon } from './icons';
+import { Icon, Eyebrow } from './icons';
 
 export function Demo() {
   const [step, setStep] = useState(0);
@@ -20,7 +20,7 @@ export function Demo() {
       <div className="container">
         <div className="demo">
           <div>
-            <span className="eyebrow">a peek</span>
+            <Eyebrow>a peek</Eyebrow>
             <h2 className="display display--lg" style={{ marginTop: 14 }}>
               one prompt in. <em className="italic-accent">whole paper</em> out.
             </h2>
@@ -93,12 +93,12 @@ export function Testimonials() {
     <section className="section" id="testimonials" style={{ background: 'var(--surface)' }}>
       <div className="container">
         <div className="section-header section-header--center">
-          <span className="eyebrow">
+          <Eyebrow>
             <span className="stars">
               <Icon.Star/><Icon.Star/><Icon.Star/><Icon.Star/><Icon.Star/>
             </span>
             4.9 on the student grapevine
-          </span>
+          </Eyebrow>
           <h2 className="display display--lg">
             students are <em className="italic-accent">unwell</em> about this.
           </h2>
