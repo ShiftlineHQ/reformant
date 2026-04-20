@@ -210,7 +210,7 @@ export function FAQ() {
     },
     {
       q: "what languages does it work in?",
-      a: "every language. we support all major languages and dialects.",
+      a: "russian and english. more coming soon.",
     },
     {
       q: "do you keep my work?",
@@ -301,13 +301,24 @@ export function Footer() {
       <div className="container">
         <div className="footer__grid">
           <div className="footer__brand">
-            <img
-              src="/assets/favicon.svg"
-              alt="reformant"
-              height="28"
-              width="28"
-              style={{ height: 28, width: 28 }}
-            />
+            <div className="footer__badge" aria-label="Made by Shiftline">
+              <img
+                className="footer__badge-mark"
+                src="/assets/favicon.svg"
+                alt="reformant"
+                height="28"
+                width="28"
+              />
+              <span className="footer__badge-text">
+                made with <Icon.Heart size={14} /> by
+              </span>
+              <img
+                className="footer__badge-logo"
+                src="/assets/shiftline.svg"
+                alt="Shiftline"
+                height="18"
+              />
+            </div>
             <p className="footer__brand-tag">
               university autopilot. drop anything in. get a polished paper out.
               built for students who'd rather be doing anything else.

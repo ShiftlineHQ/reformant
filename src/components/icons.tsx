@@ -16,6 +16,7 @@ import {
   Menu01Icon,
   StarIcon,
   TelegramIcon,
+  Heart,
 } from "@hugeicons/core-free-icons";
 
 type IconProps = { size?: number };
@@ -41,6 +42,7 @@ export const Icon = {
   Menu: make(Menu01Icon, 22),
   Star: make(StarIcon, 14),
   Telegram: make(TelegramIcon, 16),
+  Heart: make(Heart, 16),
 };
 
 export function Eyebrow({ children }: { children: ReactNode }) {
